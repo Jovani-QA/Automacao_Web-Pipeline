@@ -31,7 +31,9 @@ public class pageLogin {
 
     //Actions login
 
-    public void preencherEmail(String emailCliente){email.sendKeys(emailCliente);}
+    public void preencherEmail(String emailCliente) {
+        email.sendKeys(emailCliente);
+    }
 
     public void preencherSenha(String senhalCliente){senha.sendKeys(senhalCliente);}
 

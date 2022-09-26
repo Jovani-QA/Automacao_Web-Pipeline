@@ -1,6 +1,7 @@
 package modulosWeb.login.testsLogin;
 
 import config.config;
+
 import modulosWeb.login.pageLogin.pageLogin;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +18,7 @@ public class testLogin {
 
     @Test
     public void loginValido(){
+
         String email = "db106@cstng.com";
         String senha = "cst0962";
 
@@ -26,7 +28,7 @@ public class testLogin {
         pagelogin.preencherSenha(senha);
         pagelogin.clicarEmEntrar();
         driver.close();
-        driver.quit();
+
 
     }
 

@@ -33,7 +33,7 @@ public class TestSenhaVazia {
         } else{
             System.out.println("O teste falhou,o resultado apresentado na tela foi:"+ " "+ result);
         }
-        driver.quit();
+        //driver.quit();
     }
 }
 

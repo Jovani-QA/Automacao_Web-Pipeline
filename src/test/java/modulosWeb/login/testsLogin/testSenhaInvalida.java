@@ -26,6 +26,8 @@ public class testSenhaInvalida {
 
         pageLogin pagelogin = new pageLogin(driver);
 
+        // Resposta esperada: Usuário e/ou Senha inválidos"
+
         pagelogin.preencherEmail(email);
         pagelogin.preencherSenha(senha);
         pagelogin.clicarEmEntrar();
@@ -36,8 +38,8 @@ public class testSenhaInvalida {
      } else{
          System.out.println("O teste falhou,o resultado apresentado na tela foi:"+ " "+ result);
        }
-        driver.quit();
+        //driver.close();
+
     }
 }
 
-//Usuário e/ou Senha inválidos"
