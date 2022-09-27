@@ -26,19 +26,22 @@ public class testSenhaInvalida {
 
         pageLogin pagelogin = new pageLogin(driver);
 
-        // Resposta esperada: Usuário e/ou Senha inválidos"
 
         pagelogin.preencherEmail(email);
         pagelogin.preencherSenha(senha);
         pagelogin.clicarEmEntrar();
+
+
         String result = driver.findElement(By.xpath("/html[1]/body[1]/div[4]/div[1]/div[2]/div[2]/p[1]")).getText();
 
+        // Resposta esperada: Usuário e/ou Senha inválidos"
+
      if(result.equals("Usuário e/ou Senha inválidos")){
-         System.out.println("O teste de senha inválida passou, a informação encontrada na tela é:"+ "" + result);
+         System.out.println("O teste de senha inválida passou, a informação encontrada na tela é: \n"+"" + result);
      } else{
          System.out.println("O teste falhou,o resultado apresentado na tela foi:"+ " "+ result);
        }
-        //driver.close();
+        driver.close();
 
     }
 }
