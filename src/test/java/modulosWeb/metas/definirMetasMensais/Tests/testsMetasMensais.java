@@ -6,6 +6,7 @@ import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensais;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class testsMetasMensais {
@@ -26,18 +27,11 @@ public class testsMetasMensais {
         String resultadoEsperado = "R$ 99,90";
         String sobrasEsperada = "R$ 0,30";
 
+
         //Ao realizar uma distribuição para o mês de setembro inserindo 03 colaboradorer
         //e informando o valor de 300 reais. o valor inserido / 3 é = 100 R$. Porém ao distribuir a meta entre ele  o valor por
         //pessoa fia 99,90 e o valor da sobra é 0,30.
 
-
-//        public void scrollPage() {
-//        ((JavascriptExecutor)driver).executeScript("scroll(0,800)");
-//
-//        }
-//        String nomeColaborador1 = "Aline Jennifer";
-//        String nomeColaborador2 ="Bento";
-//        String nomeColaborador3 ="Rafael";
 
 
         LoginestruturaPrincipal estrututaLogin = new LoginestruturaPrincipal();
@@ -46,7 +40,8 @@ public class testsMetasMensais {
 
 
         metasMensais.clicarNoModulodeMetas();
-        metasMensais.clicarnoBotaoNoModulodeMetas();
+        metasMensais.clicarnoBotaoDefinirMetas();
+        metasMensais.selecionarMesMeta();
         metasMensais.clicarNoBtaoInserirColaborador();
         metasMensais.selecionarColaboradorJenifer();
         metasMensais.clicarEmIncluirColaborador();
@@ -83,8 +78,22 @@ public class testsMetasMensais {
                         "O valor das sobras apresentado foi" + sobras);
 
             }
-            //mDriver.close();
-            //boticario
+
+        // Excluir massa e dados utilizados!
+
+             metasMensais.clicarNoBotaoSalvar();
+             metasMensais.clicarnoBotaoDefinirMetas();
+             metasMensais.clicarNoBotaoExclusaoFuncionarios();
+             metasMensais.clicarExcluirAlan();
+             metasMensais.clicarNoBotaoConfirmarExclusao();
+             metasMensais.clicarNoBotaoExclusaoFuncionarios();
+             metasMensais.clicarExcluirAline();
+             metasMensais.clicarNoBotaoConfirmarExclusao();
+             metasMensais.clicarNoBotaoSalvar();
+             metasMensais.scrollPage();
+
+            mDriver.close();
+
 
         }
     }
