@@ -20,6 +20,7 @@ public class testsMetasMensais {
 
     @Test
     public void inserirMetaMensaleDistribuir() throws InterruptedException {
+
         String email = "db106@cstng.com";
         String senha = "cst0962";
         String valor = "300,00";
