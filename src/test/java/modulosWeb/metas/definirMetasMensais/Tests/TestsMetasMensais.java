@@ -69,8 +69,9 @@ public class TestsMetasMensais {
                         "O resultado esperado das sobras e:" + " " + sobrasEsperada +"\n" +
                         "O valor das sobras apresentdo na tela:"+ " " + sobras +"\n"+
                         "\n"+
-
-                        "O calculo basicamente  e o valor de meta inserida dividido por cada colaborador inserido =" + totalpessoa+ "\n");
+                        "CALCULO REALIZADO:\n"+
+                        "O calculo basicamente e o valor de meta inserida dividido por cada colaborador inserido," +
+                        " que resultou em → " + totalpessoa+ ", menos o valor das sobras que resultou → " + sobras +"\n");
             }else{
                 System.out.println("\n"+
                         "O TESTE FALHOU!!\n"+

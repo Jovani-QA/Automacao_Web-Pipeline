@@ -23,7 +23,7 @@ public class TestSenhaInvalida {
     public void loginsenhaInvalida(){
         String email = "db106@cstng.com";
         String senha = "aaaaa";
-        String mensagenEsperada ="Usuário e/ou Senha inválido";
+        String mensagenEsperada ="Usuário e/ou Senha inválidos";
 
         //Mensagem atual = Usuário e/ou Senha inválidos
 
