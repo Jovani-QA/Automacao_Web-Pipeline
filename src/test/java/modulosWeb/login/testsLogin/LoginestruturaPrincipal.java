@@ -1,6 +1,6 @@
 package modulosWeb.login.testsLogin;
 
-import config.config;
+import modulosWeb.login.testesUnidade.config.config;
 ;
 import modulosWeb.login.pageLogin.pageLogin;
 import org.junit.Before;

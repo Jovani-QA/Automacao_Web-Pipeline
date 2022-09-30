@@ -1,15 +1,14 @@
 package modulosWeb.metas.definirMetasMensais.Tests;
 
-import config.config;
+import modulosWeb.login.testesUnidade.config.config;
 import modulosWeb.login.testsLogin.LoginestruturaPrincipal;
 import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensais;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-public class testsMetasMensais {
+public class TestsMetasMensais {
     private WebDriver mDriver;
 
     @Before

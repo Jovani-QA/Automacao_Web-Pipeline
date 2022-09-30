@@ -1,7 +1,4 @@
 package modulosWeb.metas.definirMetasMensais.Page;
-import modulosWeb.login.testsLogin.testLogin;
-import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

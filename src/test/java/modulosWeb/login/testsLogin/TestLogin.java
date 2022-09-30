@@ -1,13 +1,13 @@
 package modulosWeb.login.testsLogin;
 
-import config.config;
+import modulosWeb.login.testesUnidade.config.config;
 
 import modulosWeb.login.pageLogin.pageLogin;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-public class testLogin {
+public class TestLogin {
     private WebDriver driver;
 
     @Before
