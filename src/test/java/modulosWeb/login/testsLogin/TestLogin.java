@@ -20,15 +20,21 @@ public class TestLogin {
     public void loginValido(){
 
         String email = "db106@cstng.com";
-        String senha = "cst0962";
+        String senha = "cst096";
+
 
         pageLogin pagelogin = new pageLogin(driver);
 
         pagelogin.preencherEmail(email);
         pagelogin.preencherSenha(senha);
         pagelogin.clicarEmEntrar();
-        driver.close();
 
+
+        System.out.println("O teste Psasou!!\n" +
+                "Login efetuado com sucesso!!");
+
+
+        driver.close();
 
     }
 

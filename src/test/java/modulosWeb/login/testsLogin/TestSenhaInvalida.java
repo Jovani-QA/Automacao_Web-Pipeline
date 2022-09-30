@@ -23,6 +23,9 @@ public class TestSenhaInvalida {
     public void loginsenhaInvalida(){
         String email = "db106@cstng.com";
         String senha = "aaaaa";
+        String mensagenEsperada ="Usuário e/ou Senha inválido";
+
+        //Mensagem atual = Usuário e/ou Senha inválidos
 
         pageLogin pagelogin = new pageLogin(driver);
 
@@ -36,10 +39,14 @@ public class TestSenhaInvalida {
 
         // Resposta esperada: Usuário e/ou Senha inválidos"
 
-     if(result.equals("Usuário e/ou Senha inválidos")){
-         System.out.println("O teste de senha inválida passou, a informação encontrada na tela é: \n"+"" + result);
+     if(result.equals(mensagenEsperada)){
+         System.out.println("O teste de senha inválida passou!!\n"
+                           +"A mensagem esperada é:"+" " + mensagenEsperada + "\n"
+                           +"A mensagem informada na tela foi:"+" " + result);
      } else{
-         System.out.println("O teste falhou,o resultado apresentado na tela foi:"+ " "+ result);
+         System.out.println("O teste falhou!!\n" +
+                            "O resultado apresentado na tela foi:"+ " "+ result + "\n"
+                           +"O resultado esparado era:"+ " "+ mensagenEsperada);
        }
         driver.close();
 
