@@ -61,7 +61,8 @@ public class TestsMetasMensais {
 
 
         if (result.equals(resultadoEsperado)&&(sobras.equals(sobrasEsperada))) {
-                System.out.println("O TESTE PASSOU!!\n" +
+                System.out.println("\n"+
+                        "O TESTE PASSOU!!\n" +
                         "O valor inserido para distribuicao foi:" + " " + valor +"R$"+ "\n" +
                         "O valor esperado da distribuicao por colaborador e:"+ resultadoEsperado +"\n" +
                         "O resultado apresentado na tela foi:" +" "+ result +"\n" +
@@ -71,11 +72,12 @@ public class TestsMetasMensais {
 
                         "O calculo basicamente  e o valor de meta inserida dividido por cada colaborador inserido =" + totalpessoa+ "\n");
             }else{
-                System.out.println("O TESTE FALHOU!!\n"+
+                System.out.println("\n"+
+                        "O TESTE FALHOU!!\n"+
                         "O resultado esperado da distribuicao e:" +" " + resultadoEsperado+ "\n" +
                         "O valor apresentado de distribuicao na tela foi:" + " " + result+ "\n"+
                         "O valor esperado das sobra e:" + " "+ sobrasEsperada + "\n"+
-                        "O valor das sobras apresentado foi" + sobras);
+                        "O valor das sobras apresentado foi" + sobras + "\n");
 
             }
 
