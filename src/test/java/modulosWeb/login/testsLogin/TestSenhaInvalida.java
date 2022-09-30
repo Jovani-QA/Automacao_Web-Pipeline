@@ -40,11 +40,11 @@ public class TestSenhaInvalida {
         // Resposta esperada: Usuário e/ou Senha inválidos"
 
      if(result.equals(mensagenEsperada)){
-         System.out.println("O teste de senha inválida passou!!\n"
+         System.out.println("RESULTADO DO TESTE: Passou !!\n"
                            +"A mensagem esperada é:"+" " + mensagenEsperada + "\n"
                            +"A mensagem informada na tela foi:"+" " + result);
      } else{
-         System.out.println("O teste falhou!!\n" +
+         System.out.println("RESULTADO DO TESTE: Falhou!!\n" +
                             "O resultado apresentado na tela foi:"+ " "+ result + "\n"
                            +"O resultado esparado era:"+ " "+ mensagenEsperada);
        }

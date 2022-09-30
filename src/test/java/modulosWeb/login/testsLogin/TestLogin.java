@@ -30,8 +30,8 @@ public class TestLogin {
         pagelogin.clicarEmEntrar();
 
 
-        System.out.println("O teste Psasou!!\n" +
-                "Login efetuado com sucesso!!");
+        System.out.println("RESUSLTADO DO TESTE: Positivo\n"+
+                           "TESTE : Efetuar login com e-mail e senha válidos\n");
 
 
         driver.close();
