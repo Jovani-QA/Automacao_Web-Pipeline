@@ -34,7 +34,7 @@ public class TestLogin {
                            "RESUSLTADO DO TESTE: Passou\n"+
                            "TESTE : Efetuar login com e-mail e senha válidos\n");
 
-        driver.close();
+        //driver.close();
 
     }
 
