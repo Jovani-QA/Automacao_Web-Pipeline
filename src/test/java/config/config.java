@@ -1,4 +1,4 @@
-package modulosWeb.login.testesUnidade.config;
+package config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +10,10 @@ public class config {
     public WebDriver WebDriver()
     {
         WebDriver driver = new ChromeDriver();
-        driver.get("http://169.62.128.221/Casting/CASTING_ADM_HOMO");
+
+        //driver.get("http://169.62.128.221/Casting/CASTING_ADM_HOMO");
+        driver.get("https://hcm.serhcm.com.br/CASTING/CASTING_ADM/Account/Login");
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         return driver;

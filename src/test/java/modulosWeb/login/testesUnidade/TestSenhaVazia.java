@@ -1,6 +1,6 @@
 package modulosWeb.login.testesUnidade;
 import modulosWeb.login.pageLogin.pageLogin;
-import modulosWeb.login.testesUnidade.config.config;
+import config.config;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;

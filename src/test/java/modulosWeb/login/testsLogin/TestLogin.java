@@ -1,6 +1,6 @@
 package modulosWeb.login.testsLogin;
 
-import modulosWeb.login.testesUnidade.config.config;
+import config.config;
 
 import modulosWeb.login.pageLogin.pageLogin;
 import org.junit.Before;
@@ -19,8 +19,8 @@ public class TestLogin {
     @Test
     public void loginValido(){
 
-        String email = "db106@cstng.com";
-        String senha = "cst096";
+        String email = "db118@cstng.com";
+        String senha = "cst0962";
 
 
         pageLogin pagelogin = new pageLogin(driver);
@@ -34,7 +34,7 @@ public class TestLogin {
                            "RESUSLTADO DO TESTE: Passou\n"+
                            "TESTE : Efetuar login com e-mail e senha válidos\n");
 
-        //driver.close();
+        driver.close();
 
     }
 

@@ -1,6 +1,6 @@
 package modulosWeb.metas.definirMetasMensais.Tests;
 
-import modulosWeb.login.testesUnidade.config.config;
+import config.config;
 import modulosWeb.login.testsLogin.LoginestruturaPrincipal;
 import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensais;
 import org.junit.Before;
@@ -20,12 +20,12 @@ public class TestsMetasMensais {
     @Test
     public void inserirMetaMensaleDistribuir() throws InterruptedException {
 
-        String email = "db106@cstng.com";
+        String email = "db118@cstng.com";
         String senha = "cst0962";
         String valor = "300,00";
         int valormeta = 300;
-        String resultadoEsperado = "R$ 99,90";
-        String sobrasEsperada = "R$ 0,30";
+        String resultadoEsperado = "R$ 100,13";
+        String sobrasEsperada = "R$ -0,39";
 
 
         //Ao realizar uma distribuição para o mês de setembro inserindo 03 colaboradorer
@@ -41,12 +41,12 @@ public class TestsMetasMensais {
 
         metasMensais.clicarNoModulodeMetas();
         metasMensais.clicarnoBotaoDefinirMetas();
-        metasMensais.selecionarMesMeta();
+        metasMensais.selecionarMesMetaMensal();
         metasMensais.clicarNoBtaoInserirColaborador();
-        metasMensais.selecionarColaboradorJenifer();
+        metasMensais.selecionarColaborador01();
         metasMensais.clicarEmIncluirColaborador();
         metasMensais.clicarNoBtaoInserirColaborador();
-        metasMensais.selecionarColaboradorAlan();
+        metasMensais.selecionarColaborador02();
         metasMensais.clicarEmIncluirColaborador();
         metasMensais.apagarValordoCampo();
         metasMensais.inserirValordaMeta(valor);

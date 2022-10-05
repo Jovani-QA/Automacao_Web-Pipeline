@@ -25,7 +25,7 @@ public  class inserirMetasMensais {
     @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[2]/ul[1]/li[1]/div[2]/div[5]/a[1]/i[1]")
     private WebElement botaoMetasmensais;
 
-    @FindBy(how = How.XPATH, using = "//option[@value='c22f4b38-28d8-4922-8846-bb4cc2c99c2d']")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"DDL_PERIODO\"]/option[3]")
     private WebElement selecionarMes;
 
     @FindBy(how = How.XPATH, using = "(//input[@id='TOTAL_UND'])[1]")
@@ -34,17 +34,17 @@ public  class inserirMetasMensais {
     @FindBy(how = How.XPATH, using = "(//input[@id='TOTAL_UND'])[1]")
     private WebElement inserirMeta;
 
-    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/form[1]/fieldset[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]")
+    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/form[1]/fieldset[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]/i[1]")
     private WebElement clicaInserirColaborador;
 
-    @FindBy(how = How.XPATH, using = "(//option[@value='c84fab2c-2894-4e63-bfff-ad7271290cff'])[1]")
-    private WebElement inserirColaboradorJenigfer;
+    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[2]/div[2]/select[1]/option[5]")
+    private WebElement inserirColaborador01;
 
-    @FindBy(how = How.XPATH, using = "//html[1]/body[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[2]/div[2]/select[1]/option[29]")
-    private WebElement inserirColaboradorBento;
+    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[2]/div[2]/select[1]/option[13]")
+    private WebElement inserirColaborador02;
 
-    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[2]/div[2]/select[1]/option[3]")
-    private WebElement inserirColaboradorAlan;
+    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[2]/div[2]/select[1]/option[21]")
+    private WebElement inserirColaborador03;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"AddUserModal\"]/div/div/div[3]/button[2]")
     private WebElement clicarEmIncluirColaborador;
@@ -82,18 +82,13 @@ public  class inserirMetasMensais {
     //Actions Metas (inserir colaboradores, meta , distribuir a meta e salvar).
     public void clicarNoModulodeMetas(){clicarModuloMetas.click();}
     public void clicarnoBotaoDefinirMetas(){botaoMetasmensais.click();}
-    public void selecionarMesMeta(){selecionarMes.click();}
-
+    public void selecionarMesMetaMensal(){selecionarMes.click();}
     public void apagarValordoCampo(){apagarValor.clear();}
-
     public void inserirValordaMeta(String valor){inserirMeta.sendKeys(valor);}
-
     public void clicarNoBtaoInserirColaborador(){clicaInserirColaborador.click();}
-
-    public void selecionarColaboradorJenifer( ){inserirColaboradorJenigfer.click();}
-    public void selecionarColaboradorBento(){inserirColaboradorBento.click();}
-
-    public void selecionarColaboradorAlan(){inserirColaboradorAlan.click();}
+    public void selecionarColaborador01( ){inserirColaborador01.click();}
+    public void selecionarColaborador02(){inserirColaborador02.click();}
+    public void selecionarColaborador03(){inserirColaborador03.click();}
     public void clicarEmIncluirColaborador( ){clicarEmIncluirColaborador.click();}
     public void abrirDistribuicaodeMetas( ){abrirDistribuicaoMetas.click();}
     public void distribuirValorMetas( ){clicarDistribuirMetas.click();}
@@ -106,7 +101,6 @@ public  class inserirMetasMensais {
     public void clicarExcluirAlan( ){excluirAlan.click();}
     public void clicarExcluirAline( ){excluirAline.click();}
     public void clicarNoBotaoConfirmarExclusao( ){confirmarExcluir.click();}
-
     public void scrollPage() {
         ((JavascriptExecutor) driver).executeScript("scroll(0,800)");
     }
