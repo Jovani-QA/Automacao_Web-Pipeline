@@ -1,8 +1,8 @@
-package modulosWeb.metas.definirMetasMensais.Tests;
+package modulosWeb.login.testsLogin.definirMetasMensais.Tests;
 
 import config.config;
 import modulosWeb.login.testsLogin.LoginestruturaPrincipal;
-import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensais;
+import modulosWeb.login.testsLogin.definirMetasMensais.Page.inserirMetasMensais;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
