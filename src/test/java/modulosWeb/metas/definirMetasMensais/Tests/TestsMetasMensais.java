@@ -34,9 +34,9 @@ public class TestsMetasMensais {
 
 
 
-        LoginestruturaPrincipal estrututaLogin = new LoginestruturaPrincipal();
+        LoginestruturaPrincipal estruturaL = new LoginestruturaPrincipal();
         inserirMetasMensais metasMensais = new inserirMetasMensais(mDriver);
-        estrututaLogin.estruturaLogin(email, senha, mDriver);
+        estruturaL.estruturaLogin(email, senha, mDriver);
 
 
         metasMensais.clicarNoModulodeMetas();

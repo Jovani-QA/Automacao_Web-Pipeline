@@ -38,4 +38,28 @@ public class TestLogin {
 
     }
 
+    public static class testUsuarioInvalido {
+
+        private WebDriver driver;
+
+        @Before
+        public void criarDriver(){
+            config webdriver = new config();
+            driver = webdriver.WebDriver();
+        }
+
+        @Test
+        public void loginUsuarioInvalido(){
+            String email = "db106@cstng";
+            String senha = "cst0962";
+
+            pageLogin pagelogin = new pageLogin(driver);
+
+            pagelogin.preencherEmail(email);
+            pagelogin.preencherSenha(senha);
+            pagelogin.clicarEmEntrar();
+
+        }
+
+    }
 }
