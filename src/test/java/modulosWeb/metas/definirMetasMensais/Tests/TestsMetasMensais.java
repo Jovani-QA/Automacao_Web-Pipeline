@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import static org.junit.Assert.assertEquals;
+
 public class TestsMetasMensais {
     private WebDriver mDriver;
 
@@ -32,13 +34,11 @@ public class TestsMetasMensais {
         //e informando o valor de 300 reais. o valor inserido / 3 é = 100 R$. Porém ao distribuir a meta entre ele  o valor por
         //pessoa fia 99,90 e o valor da sobra é 0,30.
 
-
-
+        inserirMetasMensais metasMensais   = new inserirMetasMensais(mDriver);
         LoginestruturaPrincipal estruturaL = new LoginestruturaPrincipal();
-        inserirMetasMensais metasMensais = new inserirMetasMensais(mDriver);
+
+
         estruturaL.estruturaLogin(email, senha, mDriver);
-
-
         metasMensais.clicarNoModulodeMetas();
         metasMensais.clicarnoBotaoDefinirMetas();
         metasMensais.selecionarMesMetaMensal();
@@ -59,7 +59,6 @@ public class TestsMetasMensais {
         int totalpessoa = (valormeta)/3;
 
 
-
         if (result.equals(resultadoEsperado)&&(sobras.equals(sobrasEsperada))) {
                 System.out.println("\n"+
                         "O TESTE PASSOU!!\n" +
@@ -68,10 +67,10 @@ public class TestsMetasMensais {
                         "O resultado apresentado na tela foi:" +" "+ result +"\n" +
                         "O resultado esperado das sobras e:" + " " + sobrasEsperada +"\n" +
                         "O valor das sobras apresentdo na tela:"+ " " + sobras +"\n"+
-                        "\n"+
-                        "CALCULO REALIZADO:\n"+
-                        "O calculo basicamente e o valor de meta inserida dividido por cada colaborador inserido," +
-                        " que resultou em → " + totalpessoa+ ", menos o valor das sobras que resultou → " + sobras +"\n");
+                        "\n");
+//                        "CALCULO REALIZADO:\n"+
+//                        "O calculo basicamente e o valor de meta inserida dividido por cada colaborador inserido,\n"+
+//                        "que resultou em → " + totalpessoa+ ", menos o valor das sobras que resultou → " + sobras +"\n");
             }else{
                 System.out.println("\n"+
                         "O TESTE FALHOU!!\n"+
@@ -95,7 +94,9 @@ public class TestsMetasMensais {
              metasMensais.clicarNoBotaoSalvar();
              metasMensais.scrollPage();
 
-            mDriver.close();
+             assertEquals(result, resultadoEsperado);
+             assertEquals(sobras, sobrasEsperada);
+             mDriver.close();
 
 
         }
