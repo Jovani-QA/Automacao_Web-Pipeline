@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestsMetasMensais {
+public class TestsMetasMensaisDefinirMetas {
     private WebDriver mDriver;
 
     @Before
@@ -58,20 +58,20 @@ public class TestsMetasMensais {
 
         if (result.equals(resultadoEsperado) && (sobras.equals(sobrasEsperada))) {
             System.out.println("\n" +
-                    "TESTE: INSERIR  META MENSAL E DISTRIBUIR PARA 03 COLABORADORES !!\n" +
+                    "TESTE METAS MENSAIS 01: Inserir a meta mesal e distribuir para os 03 colaboradores\n" +
                     "O TESTE PASSOU!!\n" +
                     "O valor inserido para distribuicao foi:" + " " + valor + "R$" + "\n" +
                     "O valor esperado da distribuicao por colaborador e:" + resultadoEsperado + "\n" +
                     "O resultado apresentado na tela foi:" + " " + result + "\n" +
                     "O resultado esperado das sobras e:" + " " + sobrasEsperada + "\n" +
-                    "O valor das sobras apresentdo na tela:" + " " + sobras + "\n" +
+                    "O valor das sobras apresentado na tela:" + " " + sobras + "\n" +
                     "\n");
 //                        "CALCULO REALIZADO:\n"+
 //                        "O calculo basicamente e o valor de meta inserida dividido por cada colaborador inserido,\n"+
 //                        "que resultou em → " + totalpessoa+ ", menos o valor das sobras que resultou → " + sobras +"\n");
         } else {
             System.out.println("\n" +
-                    "TESTE: INSERIR  META MENSAL E DISTRIBUIR PARA 03 COLABORADORES !!\n" +
+                    "TESTE METAS MENSAIS 01: Inserir a meta mesal e distribuir para os 03 colaboradores\n" +
                     "O TESTE FALHOU!!\n" +
                     "O resultado esperado da distribuicao e:" + " " + resultadoEsperado + "\n" +
                     "O valor apresentado de distribuicao na tela foi:" + " " + result + "\n" +
