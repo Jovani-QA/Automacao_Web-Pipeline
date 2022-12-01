@@ -41,13 +41,13 @@ public class TestSenhaInvalida {
 
      if(result.equals(mensagenEsperada)){
          System.out.println("\n"
-                           + "TESTE: inserir e-mail valido porem senha ( INVALIDA )!!\n"
+                           + "TESTE LOGIN 03: inserir e-mail valido porem senha ( INVALIDA )!!\n"
                            + "RESULTADO DO TESTE: Passou!!\n"
                            + "A MENSAGEM ESPERADA É:"+" " + mensagenEsperada + "\n"
                            + "A MENSAGEM APRENSENTADA NA TELA FOI:"+" " + result +"\n");
      } else{
          System.out.println("\n"+
-                            "TESTE: inserir e-mail valido porem senha ( INVALIDA )!!\n"+
+                            "TESTE LOGIN 03: inserir e-mail valido porem senha ( INVALIDA )!!\n"+
                             "RESULTADO DO TESTE: Falhou!!\n" +
                             "O RESULTADO APRESENTADO NA TELA FOI:"+ " "+ result + "\n"+
                             "O RESULTADO ESPERADO ERA:"+ " "+ mensagenEsperada +"\n");
