@@ -31,8 +31,9 @@ public class TestLogin {
 
 
         System.out.println("\n"+
-                           "RESUSLTADO DO TESTE: Passou\n"+
-                           "TESTE : Efetuar login com e-mail e senha válidos\n");
+                           "TESTE LOGIN 01 : Efetuar login com e-mail e senha validos\n"+
+                           "RESUSLTADO DO TESTE:  Passou\n");
+
 
         driver.close();
 

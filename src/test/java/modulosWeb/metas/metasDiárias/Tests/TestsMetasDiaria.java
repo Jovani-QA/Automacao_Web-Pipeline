@@ -46,7 +46,7 @@ public class TestsMetasDiaria {
 
         String resultadoDistribuicaoMetasDiarias = mDriver.findElement(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[2]/ul[1]/li[2]/div[3]/a[1]/span[1]")).getText();
 
-        //System.out.println(resultadoDistribuicaoMetasDiarias);
+        //'System.out.println(resultadoDistribuicaoMetasDiarias);
 
 
         metasDiarias.ClicarEmMetasDiarias();
@@ -56,11 +56,14 @@ public class TestsMetasDiaria {
         metasDiarias.InserirMeta04(meta04);
         metasDiarias.ClicarEmSalvarMetaDiaria();
 
-        System.out.println("O resultado é a meta01 + meta02");
-        assertEquals(resultadoDistribuicaoMetasDiarias, "R$ 25,00");
+        System.out.println("O resultado e a meta01 + meta02");
         System.out.println(resultadoDistribuicaoMetasDiarias);
+        assertEquals(resultadoDistribuicaoMetasDiarias, "R$ 25,00");
+        System.out.println("TESTE PASSOU COM SUCESSO!");
 
         mDriver.close();
+
+        
 
     }
 }

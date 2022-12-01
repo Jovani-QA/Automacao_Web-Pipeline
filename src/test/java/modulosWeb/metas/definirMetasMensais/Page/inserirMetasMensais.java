@@ -25,7 +25,7 @@ public  class inserirMetasMensais {
     @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[2]/ul[1]/li[1]/div[2]/div[5]/a[1]/i[1]")
     private WebElement botaoMetasmensais;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"DDL_PERIODO\"]/option[3]")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"DDL_PERIODO\"]/option[1]")
     private WebElement selecionarMes;
 
     @FindBy(how = How.XPATH, using = "(//input[@id='TOTAL_UND'])[1]")
