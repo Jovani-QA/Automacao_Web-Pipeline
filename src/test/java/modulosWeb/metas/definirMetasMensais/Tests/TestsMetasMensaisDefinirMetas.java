@@ -2,7 +2,7 @@ package modulosWeb.metas.definirMetasMensais.Tests;
 
 import config.config;
 import modulosWeb.login.testsLogin.LoginestruturaPrincipal;
-import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensais;
+import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensaisPage;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -30,7 +30,7 @@ public class TestsMetasMensaisDefinirMetas {
         String sobrasEsperada = "R$ -0,39";
 
 
-        inserirMetasMensais metasMensais = new inserirMetasMensais(mDriver);
+        inserirMetasMensaisPage metasMensais = new inserirMetasMensaisPage(mDriver);
         LoginestruturaPrincipal estruturaL = new LoginestruturaPrincipal();
 
         // ( estruturaL ) →  estrutura do login criada para usar em todas as fases do projeto.
@@ -97,22 +97,6 @@ public class TestsMetasMensaisDefinirMetas {
         assertEquals(sobras, sobrasEsperada);
         mDriver.close();
 
-
-    }
-
-    @Test
-    public void deixarCampoVazioClicarEmSalvar() throws InterruptedException {
-
-        String email = "db118@cstng.com";
-        String senha = "cst0962";
-
-        inserirMetasMensais metasMensais = new inserirMetasMensais(mDriver);
-        LoginestruturaPrincipal estruturaL = new LoginestruturaPrincipal();
-
-        estruturaL.estruturaLogin(email, senha, mDriver);
-        metasMensais.clicarNoModulodeMetas();
-        metasMensais.clicarnoBotaoDefinirMetas();
-        metasMensais.selecionarMesMetaMensal();
 
     }
 

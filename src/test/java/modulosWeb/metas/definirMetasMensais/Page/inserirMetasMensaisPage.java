@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public  class inserirMetasMensais {
+public  class inserirMetasMensaisPage {
     private final WebDriver driver;
 
     //Construtor
 
-    public inserirMetasMensais(WebDriver driver) {
+    public inserirMetasMensaisPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }

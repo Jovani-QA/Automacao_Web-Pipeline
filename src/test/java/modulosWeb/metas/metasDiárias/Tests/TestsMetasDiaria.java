@@ -2,7 +2,7 @@ package modulosWeb.metas.metasDiárias.Tests;
 
 import config.config;
 import modulosWeb.login.testsLogin.LoginestruturaPrincipal;
-import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensais;
+import modulosWeb.metas.definirMetasMensais.Page.inserirMetasMensaisPage;
 import modulosWeb.metas.metasDiárias.Pages.PageMetasDiarias;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,7 +33,7 @@ public class TestsMetasDiaria {
 
         PageMetasDiarias metasDiarias = new PageMetasDiarias(mDriver);
         LoginestruturaPrincipal estruturaL = new LoginestruturaPrincipal();
-        inserirMetasMensais metasMensais   = new inserirMetasMensais(mDriver);
+        inserirMetasMensaisPage metasMensais   = new inserirMetasMensaisPage(mDriver);
         
         estruturaL.estruturaLogin(email, senha, mDriver);
         metasMensais.clicarNoModulodeMetas();
