@@ -29,10 +29,11 @@ public class TestLogin {
         pagelogin.preencherSenha(senha);
         pagelogin.clicarEmEntrar();
 
-
+        System.out.println("___________________________________________________________________________");
         System.out.println("\n"+
                            "TESTE LOGIN 01 : Efetuar login com e-mail e senha validos\n"+
                            "RESUSLTADO DO TESTE:  Passou\n");
+        System.out.println("___________________________________________________________________________");
 
         driver.close();
 

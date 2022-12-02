@@ -56,8 +56,9 @@ public class TestsMetasDiaria {
         metasDiarias.InserirMeta04(meta04);
         metasDiarias.ClicarEmSalvarMetaDiaria();
 
+        System.out.println("___________________________________________________________________________");
         System.out.println("\n" +
-                        "TESTE: " +
+                        "TESTE METAS DIARIAS: " +
                         "inserir meta para o dia 01 !!\n" +
                         "inserir meta para o dia 02 !!\n" +
                         "Clicar em salvar !!\n" +
@@ -67,6 +68,7 @@ public class TestsMetasDiaria {
 
         assertEquals(resultadoDistribuicaoMetasDiarias, "R$ 25,00");
         System.out.println("TESTE PASSOU COM SUCESSO!");
+        System.out.println("___________________________________________________________________________");
 
         mDriver.close();
 

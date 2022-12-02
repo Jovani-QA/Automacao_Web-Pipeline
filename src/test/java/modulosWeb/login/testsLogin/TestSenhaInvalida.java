@@ -40,17 +40,21 @@ public class TestSenhaInvalida {
         // Resposta esperada: Usuário e/ou Senha inválidos"
 
      if(result.equals(mensagenEsperada)){
+         System.out.println("___________________________________________________________________________");
          System.out.println("\n"
-                           + "TESTE LOGIN 03: inserir e-mail valido porem senha ( INVALIDA )!!\n"
+                           + "TESTE LOGIN 02: inserir e-mail valido porem senha ( INVALIDA )!!\n"
                            + "RESULTADO DO TESTE: Passou!!\n"
                            + "A MENSAGEM ESPERADA É:"+" " + mensagenEsperada + "\n"
                            + "A MENSAGEM APRENSENTADA NA TELA FOI:"+" " + result +"\n");
+         System.out.println("___________________________________________________________________________");
      } else{
+         System.out.println("___________________________________________________________________________");
          System.out.println("\n"+
-                            "TESTE LOGIN 03: inserir e-mail valido porem senha ( INVALIDA )!!\n"+
+                            "TESTE LOGIN 02: inserir e-mail valido porem senha ( INVALIDA )!!\n"+
                             "RESULTADO DO TESTE: Falhou!!\n" +
                             "O RESULTADO APRESENTADO NA TELA FOI:"+ " "+ result + "\n"+
                             "O RESULTADO ESPERADO ERA:"+ " "+ mensagenEsperada +"\n");
+         System.out.println("___________________________________________________________________________");
        }
         driver.close();
 

@@ -27,10 +27,12 @@ public class TestUsuarioInvalido {
 
         // Por ser um teste simples não foi inserido item de vericação, se houver necessidade poderá ser implementado.
 
+        System.out.println("___________________________________________________________________________");
         System.out.println("\n"+
-                "TESTE LOGIN 02 : Efetuar login com e-mail invalido\n"+
+                "TESTE LOGIN 03 : Efetuar login com e-mail invalido\n"+
                 "RESUSLTADO DO TESTE:  Passou\n"+
-                "O SISTEMA NAO PERMITIU ACESSO!\n");
+                "- O SISTEMA NAO PERMITIU ACESSO- \n");
+        System.out.println("___________________________________________________________________________");
 
         driver.close();
 
