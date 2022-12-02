@@ -46,8 +46,10 @@ public class TestMetasMensaisCampoVazio {
         System.out.println("___________________________________________________________________________");
         System.out.println("\n" +
                            "TESTE METAS MENSAIS 01:" + "\n" +
-                           "Distrinuir a meta para um funcionario e depois de distribuir apagar o valor inserido" +
-                           "no campo e clicar em salvar. Logo apos voltar e recalcular as sobras." + "\n");
+                           "01 -Inserir a meta para o funcionario e distribuir." + "\n"+
+                           "02- Logo apos retornar ao campo de metas, apagar (03) campos do calendario que apresentam o valor diario."+"\n"+
+                           "03- Clicar em salvar."+ "\n" +
+                           "04- Voltar para a tela de metas e resgatar  o novo valor apresentado na tela apos ter apagado o valo dos 03  campos." + "\n");
 
         System.out.println("Resultado obtido na distribuicao:" + result);
         System.out.println("Sobras da distribuicao antes de apagar os campos: " + sobras);

@@ -58,11 +58,12 @@ public class TestsMetasDiaria {
 
         System.out.println("___________________________________________________________________________");
         System.out.println("\n" +
-                        "TESTE METAS DIARIAS: " +
-                        "inserir meta para o dia 01 !!\n" +
-                        "inserir meta para o dia 02 !!\n" +
-                        "Clicar em salvar !!\n" +
-                        "Verificar o resultado apresentado que e a soma dos valores inseridos = " + resultadoDistribuicaoMetasDiarias + "\n");
+                        "TESTE METAS DIARIAS TESTE 01:"+"\n"+
+                        "01- Inserir meta para o dia 01 !!\n" +
+                        "02- Inserir meta para o dia 02 !!\n" +
+                        "03- Clicar em salvar !!\n" +
+                        "04- Retornar o resultado apresentado na tela, que e a soma dos valores inseridos."+"\n"+
+                        "Resultado apresentado na tela:" + resultadoDistribuicaoMetasDiarias + "\n");
 
         System.out.println(resultadoDistribuicaoMetasDiarias);
 
